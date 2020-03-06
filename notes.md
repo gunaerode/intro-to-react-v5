@@ -1,11 +1,26 @@
 # [Complete Intro to ReactJs](https://btholt.github.io/complete-intro-to-react-v5/intro) V5 :smiley: :heart_eyes:
 
-* [docs.emmet.io](https://docs.emmet.io/cheat-sheet/)
-* vscode plugins
-  * [markdown shortcuts](https://github.com/yzhang-gh/vscode-markdown)
-  * [markdown emoji](https://www.webfx.com/tools/emoji-cheat-sheet/) | [github link](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji)
-* [Fira code font](https://github.com/tonsky/FiraCode) 
-* study
-  * [Git in-dept](https://frontendmasters.com/courses/git-in-depth/)
-  * [js recent parts](https://frontendmasters.com/courses/js-recent-parts/)
-* 
+- [docs.emmet.io](https://docs.emmet.io/cheat-sheet/)
+- vscode plugins
+  - [markdown shortcuts](https://github.com/yzhang-gh/vscode-markdown)
+  - [markdown emoji](https://www.webfx.com/tools/emoji-cheat-sheet/) | [github link](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji)
+  - [npm intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
+- [Fira code font](https://github.com/tonsky/FiraCode)
+- study
+  - [Git in-dept](https://frontendmasters.com/courses/git-in-depth/)
+  - [js recent parts](https://frontendmasters.com/courses/js-recent-parts/)
+  - [webpack](https://frontendmasters.com/courses/webpack-fundamentals/)
+  - [react-into-v3](https://frontendmasters.com/courses/react/)
+  - [parcel](https://parceljs.org/)
+- Tools
+  - [npmJs](https://www.npmjs.com/)
+    - [prettier](https://www.npmjs.com/package/prettier)
+  - [prettier link](https://prettier.io/)
+  - [nodeJs](https://nodejs.org/en/)
+  - [esling](https://eslint.org/)
+  - eslint
+- stack overflow
+  - [npm ci vs npm i](https://stackoverflow.com/questions/52499617/what-is-the-difference-between-npm-install-and-npm-ci)
+- cdn
+  - [react](https://unpkg.com/react@16.8.4/umd/react.development.js)
+  - [react-dom](https://unpkg.com/react-dom@16.8.4/umd/react-dom.development.js)
