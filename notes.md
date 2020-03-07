@@ -12,6 +12,7 @@
   - [webpack](https://frontendmasters.com/courses/webpack-fundamentals/)
   - [react-into-v3](https://frontendmasters.com/courses/react/)
   - [parcel](https://parceljs.org/)
+  - [React intermediat](https://frontendmasters.com/courses/intermediate-react-v2/)
 - Tools
   - [npmJs](https://www.npmjs.com/)
     - [prettier](https://www.npmjs.com/package/prettier)
