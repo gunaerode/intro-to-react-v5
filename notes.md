@@ -15,6 +15,7 @@
   - [parcel](https://parceljs.org/)
   - [React intermediat](https://frontendmasters.com/courses/intermediate-react-v2/)
   - [Reach Router](https://reach.tech/router)
+  - [Debugging Js](https://frontendmasters.com/courses/debugging-javascript/) :star:
 - Tools
   - [npmJs](https://www.npmjs.com/)
     - [prettier](https://www.npmjs.com/package/prettier)
