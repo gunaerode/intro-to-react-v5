@@ -25,6 +25,7 @@
   - eslint
 - stack overflow
   - [npm ci vs npm i](https://stackoverflow.com/questions/52499617/what-is-the-difference-between-npm-install-and-npm-ci)
+  - create context [31-bit integer expected](https://stackoverflow.com/questions/55558162/how-to-fix-expected-the-return-value-to-be-a-31-bit-integer-error-react-hooks)
 - cdn
   - [react](https://unpkg.com/react@16.8.4/umd/react.development.js)
   - [react-dom](https://unpkg.com/react-dom@16.8.4/umd/react-dom.development.js)
@@ -41,3 +42,5 @@
   - [role="presentation"](https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/510)
   - [role="presentation"](https://github.com/squizlabs/HTML_CodeSniffer/issues/274)
   - [no-static-element-interations role="presentation"](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/e53906d0b2a9402b019625349ed2d58d178b3239/docs/rules/no-static-element-interactions.md#case-this-element-is-not-a-button-link-menuitem-etc-it-is-catching-bubbled-events-from-elements-that-it-contains)
+- Preactjs
+  - [url](https://preactjs.com/) Alternative for react but lacks in hooks need to check added or not
