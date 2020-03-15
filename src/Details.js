@@ -1,11 +1,13 @@
 import React from "react";
 import pet from "@frontendmasters/pet";
+import { navigate } from "@reach/router";
+import Modal from "./Modal";
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 import ThemeContext from "./ThemeContext";
 
 class Details extends React.Component {
-  state = { loading: true };
+  state = { loading: true, showModal: false };
   componentDidMount() {
     // Note: below line will throw error if you want to test error boundary
     // throw new Error(":shit:");
@@ -13,6 +15,7 @@ class Details extends React.Component {
       .animal(this.props.id) // get id from url /details/:id
       .then(({ animal }) => {
         this.setState({
+          url: animal.url,
           name: animal.name,
           animal: animal.type,
           location: `${animal.contact.address.city}. ${animal.contact.address.state}`,
@@ -23,6 +26,10 @@ class Details extends React.Component {
         });
       }, console.error);
   }
+
+  toggleModal = () => this.setState({ showModal: !this.state.showModal });
+  adopt = () => navigate(this.state.url);
+
   render() {
     const {
       name,
@@ -31,6 +38,7 @@ class Details extends React.Component {
       description,
       media,
       breed,
+      showModal,
       loading
     } = this.state;
     if (loading) {
@@ -47,13 +55,27 @@ class Details extends React.Component {
           <ThemeContext.Consumer>
             {([themeHook]) => {
               return (
-                <button style={{ backgroundColor: themeHook }}>
+                <button
+                  onClick={this.toggleModal}
+                  style={{ backgroundColor: themeHook }}
+                >
                   Adopt {name}
                 </button>
               );
             }}
           </ThemeContext.Consumer>
           <p>{description}</p>
+          {showModal ? (
+            <Modal>
+              <div>
+                <h1>Would you like to adopt {name}?</h1>
+                <div className="buttons">
+                  <button onClick={this.adopt}>Yes</button>
+                  <button onClick={this.toggleModal}>No</button>
+                </div>
+              </div>
+            </Modal>
+          ) : null}
         </div>
       </div>
     );
