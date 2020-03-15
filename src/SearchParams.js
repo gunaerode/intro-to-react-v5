@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import pet, { ANIMALS } from "@frontendmasters/pet";
 import Results from "./Results";
 import useDropdown from "./userDropdown";
+import ThemeContext from "./ThemeContext";
 
 const SearchParams = () => {
   const [location, setLocation] = useState("Seattle, WA");
@@ -9,6 +10,7 @@ const SearchParams = () => {
   const [animal, AnimalDropdown] = useDropdown("Animal", "dog", ANIMALS);
   const [breed, BreedDropdown, setBreed] = useDropdown("Breed", "", breeds);
   const [pets, setPets] = useState([]);
+  const [theme, setTheme] = useContext(ThemeContext);
 
   async function requestPets() {
     const { animals } = await pet.animals({
@@ -32,10 +34,13 @@ const SearchParams = () => {
 
   return (
     <div className="search-params">
-      <form action="" onSubmit={e => {
-        e.preventDefault();
-        requestPets();
-      }}>
+      <form
+        action=""
+        onSubmit={e => {
+          e.preventDefault();
+          requestPets();
+        }}
+      >
         <label htmlFor="location">
           Location
           <input
@@ -49,9 +54,24 @@ const SearchParams = () => {
         </label>
         <AnimalDropdown></AnimalDropdown>
         <BreedDropdown></BreedDropdown>
-        <button>submit</button>
+        <label htmlFor="color">
+          Color
+          <select
+            name="color"
+            value={theme}
+            onChange={e => setTheme(e.target.value)}
+            onBlur={e => setTheme(e.target.value)}
+          >
+            <option value="black">Black</option>
+            <option value="darkblue">Dark Blue</option>
+            <option value="cyan">Cyan</option>
+            <option value="peru">Peru</option>
+            <option value="darkred">Dark Red</option>
+          </select>
+        </label>
+        <button style={{ backgroundColor: theme }}>submit</button>
       </form>
-      <Results pets={pets} ></Results>
+      <Results pets={pets}></Results>
     </div>
   );
 };

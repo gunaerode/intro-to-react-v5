@@ -2,12 +2,13 @@ import React from "react";
 import pet from "@frontendmasters/pet";
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
+import ThemeContext from "./ThemeContext";
 
 class Details extends React.Component {
   state = { loading: true };
   componentDidMount() {
     // Note: below line will throw error if you want to test error boundary
-    // throw new Error(":shit:"); 
+    // throw new Error(":shit:");
     pet
       .animal(this.props.id) // get id from url /details/:id
       .then(({ animal }) => {
@@ -43,7 +44,15 @@ class Details extends React.Component {
           <h2>
             {animal} - {breed} - {location}
           </h2>
-          <button>Adopt {name}</button>
+          <ThemeContext.Consumer>
+            {([themeHook]) => {
+              return (
+                <button style={{ backgroundColor: themeHook }}>
+                  Adopt {name}
+                </button>
+              );
+            }}
+          </ThemeContext.Consumer>
           <p>{description}</p>
         </div>
       </div>
@@ -54,7 +63,7 @@ class Details extends React.Component {
 export default function DetailsWithErrorBoundary(props) {
   return (
     <ErrorBoundary>
-      <Details {...props}/>
+      <Details {...props} />
     </ErrorBoundary>
   );
-};
+}
