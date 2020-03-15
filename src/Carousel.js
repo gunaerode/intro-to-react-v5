@@ -45,6 +45,7 @@ class Carousel extends React.Component {
                 alt="animal thumnail"
                 key={photo}
                 onClick={this.handleIndexClick}
+                role="presentation"
                 data-index={index}
                 className={index === active ? "active" : ""}
               />

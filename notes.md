@@ -32,3 +32,12 @@
   - [Petfinder API](https://www.petfinder.com/)
 - UI/UX
   - [Place holder images](http://placecorgi.com/)
+- React.org
+  - [Error boundaries](https://reactjs.org/docs/error-boundaries.html)
+- Error trackers
+  - [Sentry](https://sentry.io/pricing/)
+  - [Track Js](https://trackjs.com/pricing/)
+- Git issues 
+  - [role="presentation"](https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/510)
+  - [role="presentation"](https://github.com/squizlabs/HTML_CodeSniffer/issues/274)
+  - [no-static-element-interations role="presentation"](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/e53906d0b2a9402b019625349ed2d58d178b3239/docs/rules/no-static-element-interactions.md#case-this-element-is-not-a-button-link-menuitem-etc-it-is-catching-bubbled-events-from-elements-that-it-contains)
