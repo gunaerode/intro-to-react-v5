@@ -61,6 +61,6 @@
   - [Concatenate](https://concatenate.io/)
 - React Hooks
   - [**useState(), useEffect(), useContext()**](https://codesandbox.io/s/zr90v4jorp) - Basic hooks
-  - [**useRef(), useReducer(), useMemo()**](https://codesandbox.io/s/zr90v4jorp) - Hooks in Depth
+  - [**useRef(), useReducer(), useMemo(), useCallback(), memo(), useLayoutEffect(), useImperativeHandle()**](https://codesandbox.io/s/zr90v4jorp) - Hooks in Depth
 - Other course links
   - [Kyle Simpson](https://frontendmasters.com/courses/deep-javascript-v3/origin-of-closure/) - For closure
