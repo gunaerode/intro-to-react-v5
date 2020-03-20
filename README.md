@@ -1,4 +1,4 @@
-# [Complete Intro to ReactJs](https://btholt.github.io/complete-intro-to-react-v5/intro) V5 :smiley: :heart_eyes:
+# [Complete Intro to ReactJs](https://btholt.github.io/complete-intro-to-react-v5/intro) V5 :smiley: :heart_eyes: **Lesson** (1 - 15)
 
 - [docs.emmet.io](https://docs.emmet.io/cheat-sheet/)
 - vscode plugins
@@ -52,3 +52,10 @@
   - [Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ffrontendmasters.com%2Fcourses%2Fcomplete-react-v5%2F)
   - [Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffrontendmasters.com%2Fcourses%2Fcomplete-react-v5%2F&t=I%20just%20completed%20%22Complete%20Intro%20to%20React%2C%20v5%22%20by%20Brian%20Holt%20on%20FrontendMasters!)
   - [Twitter](https://twitter.com/intent/tweet?url=https%3A%2F%2Ffrontendmasters.com%2Fcourses%2Fcomplete-react-v5%2F&text=I%20just%20completed%20%22Complete%20Intro%20to%20React%2C%20v5%22%20by%20%40holtbt%20on%20%40FrontendMasters!)
+
+# [Intermediate React](https://btholt.github.io/complete-intro-to-react-v5/) :heart: :fire: **Lesson** (16 - 22)
+
+- Other links
+  - [Front end happy hour](http://frontendhappyhour.com/)
+  - [Vets who code](https://vetswhocode.io/)
+  - [Concatenate](https://concatenate.io/)
