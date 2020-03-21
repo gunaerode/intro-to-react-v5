@@ -4,11 +4,10 @@ import { navigate } from "@reach/router";
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 import ThemeContext from "./ThemeContext";
-// Note: below packages for testing lazy loading with suspense
-import _ from "lodash";
-import moment from "moment";
 
-console.log("lodash:", _, "moment:", moment);
+// Note: below packages for testing lazy loading with suspense
+// import _ from "lodash";
+// import moment from "moment";
 
 const Modal = lazy(() => import("./Modal"));
 
