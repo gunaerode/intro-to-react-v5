@@ -36,7 +36,7 @@ const NavBar = () => {
         aria-label=""
         role="img"
       >
-        ❄
+        🦁
       </span>
     </header>
   );
