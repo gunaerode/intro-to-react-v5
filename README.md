@@ -73,3 +73,5 @@
 - Git Extentions
   - [Emoji Snippets](https://emojipedia.org/)
   - [VScode Styled Components](https://github.com/styled-components/vscode-styled-components)
+- SSR (Simply we can say SPA (pre compiled) on Server and given to client then Client-bundle can handle SPA as normal function)
+  - [Handlebars](https://handlebarsjs.com/) [EJS](https://ejs.co/) - Template engines for rendering
