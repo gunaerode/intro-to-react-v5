@@ -33,7 +33,7 @@ const NavBar = () => {
             animation: 1s ${spin} linear infinite;
           }
         `}
-        aria-label=""
+        aria-label="logo"
         role="img"
       >
         🦁

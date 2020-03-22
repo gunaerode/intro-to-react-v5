@@ -9,7 +9,9 @@ import ThemeContext from "./ThemeContext";
 // import _ from "lodash";
 // import moment from "moment";
 
-const Modal = lazy(() => import("./Modal"));
+// Note: https://reactjs.org/docs/code-splitting.html (React.lazy and Suspense are not yet available for server-side rendering. If you want to do code-splitting in a server rendered app, we recommend Loadable Components. It has a nice guide for bundle splitting with server-side rendering.)
+
+// const Modal = lazy(() => import("./Modal"));
 
 class Details extends React.Component {
   state = { loading: true, showModal: false };

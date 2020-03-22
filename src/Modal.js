@@ -11,7 +11,7 @@ const Modal = ({ children }) => {
   }
 
   useEffect(() => {
-    modalRoot = document.getElementById("modal");
+    modalRoot = modalRoot ? modalRoot : document.getElementById("modal");
     modalRoot.appendChild(elRef.current);
     return () => modalRoot.removeChild(elRef.current); // Only run when modal close kind of unmound function in this moment
   }, []);
