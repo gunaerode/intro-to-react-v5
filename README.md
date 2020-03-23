@@ -64,3 +64,14 @@
   - [**useRef(), useReducer(), useMemo(), useCallback(), memo(), useLayoutEffect(), useImperativeHandle()**](https://codesandbox.io/s/zr90v4jorp) - Hooks in Depth
 - Other course links
   - [Kyle Simpson](https://frontendmasters.com/courses/deep-javascript-v3/origin-of-closure/) - For closure
+  - [Rachel Nabors](https://frontendmasters.com/courses/motion-design-css/) - For motion design
+  - [Sarah Drasner](https://frontendmasters.com/courses/svg-essentials-animation/) - For SVG animation :snowflake: :fire:
+  - [Houdini](https://drafts.css-houdini.org/) - How browser paints the css
+- Design tools (CSS in Js)
+  - [Emotion](https://emotion.sh/docs/introduction)
+  - [Styled Components](https://styled-components.com/)
+- Git Extentions
+  - [Emoji Snippets](https://emojipedia.org/)
+  - [VScode Styled Components](https://github.com/styled-components/vscode-styled-components)
+- SSR (Simply we can say SPA (pre compiled) on Server and given to client then Client-bundle can handle SPA as normal function)
+  - [Handlebars](https://handlebarsjs.com/) [EJS](https://ejs.co/) - Template engines for rendering
