@@ -1,19 +1,24 @@
 import React from "react";
-import pet from "@frontendmasters/pet";
-import { navigate } from "@reach/router";
+import pet, { AnimalResponse } from "@frontendmasters/pet";
+import { navigate, RouteComponentProps } from "@reach/router";
 import Modal from "./Modal";
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 import ThemeContext from "./ThemeContext";
 
-class Details extends React.Component {
+class Details extends React.Component<RouteComponentProps<{ id: string }>> {
   state = { loading: true, showModal: false };
   componentDidMount() {
     // Note: below line will throw error if you want to test error boundary
     // throw new Error(":shit:");
+
+    if (!this.props.id) {
+      navigate("/");
+      return;
+    }
     pet
-      .animal(this.props.id) // get id from url /details/:id
-      .then(({ animal }) => {
+      .animal(+this.props.id) // get id from url /details/:id
+      .then(({ animal }: AnimalResponse) => {
         this.setState({
           url: animal.url,
           name: animal.name,
@@ -24,7 +29,8 @@ class Details extends React.Component {
           breed: animal.breeds.primary,
           loading: false
         });
-      }, console.error);
+      })
+      .catch((err: Error) => this.setState({ error: err }));
   }
 
   toggleModal = () => this.setState({ showModal: !this.state.showModal });
@@ -82,7 +88,9 @@ class Details extends React.Component {
   }
 }
 
-export default function DetailsWithErrorBoundary(props) {
+export default function DetailsWithErrorBoundary(
+  props: RouteComponentProps<{ id: string }>
+) {
   return (
     <ErrorBoundary>
       <Details {...props} />
