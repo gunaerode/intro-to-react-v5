@@ -1,10 +1,11 @@
 import React from "react";
+import { connect } from "react-redux"; // Added
 import pet from "@frontendmasters/pet";
 import { navigate } from "@reach/router";
 import Modal from "./Modal";
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
-import ThemeContext from "./ThemeContext";
+// import ThemeContext from "./ThemeContext";
 
 class Details extends React.Component {
   state = { loading: true, showModal: false };
@@ -52,18 +53,18 @@ class Details extends React.Component {
           <h2>
             {animal} - {breed} - {location}
           </h2>
-          <ThemeContext.Consumer>
+          {/* <ThemeContext.Consumer>
             {([themeHook]) => {
-              return (
-                <button
-                  onClick={this.toggleModal}
-                  style={{ backgroundColor: themeHook }}
-                >
-                  Adopt {name}
-                </button>
-              );
-            }}
-          </ThemeContext.Consumer>
+              return ( */}
+          <button
+            onClick={this.toggleModal}
+            style={{ backgroundColor: this.props.theme }} // this.props. added for themehook as theme now it will come from redux store
+          >
+            Adopt {name}
+          </button>
+          {/* );
+          }}
+          </ThemeContext.Consumer> */}
           <p>{description}</p>
           {showModal ? (
             <Modal>
@@ -82,10 +83,14 @@ class Details extends React.Component {
   }
 }
 
+const mapStateToProps = ({ theme }) => ({ theme });
+
+const WrappedDetails = connect(mapStateToProps)(Details);
+
 export default function DetailsWithErrorBoundary(props) {
   return (
     <ErrorBoundary>
-      <Details {...props} />
+      <WrappedDetails {...props} />
     </ErrorBoundary>
   );
 }
