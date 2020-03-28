@@ -9,7 +9,8 @@
     "lint": "tslint --project",
     "dev": "parcel src/index.html",
     "dev:mock": "cross-env PET_MOCK=mock npm run dev",
-    "clear-build-cache": "rm -rf .cache/ dist/"
+    "clear-build-cache": "rm -rf .cache/ dist/",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",

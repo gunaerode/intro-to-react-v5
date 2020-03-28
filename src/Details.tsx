@@ -1,5 +1,5 @@
 import React from "react";
-import pet, { AnimalResponse } from "@frontendmasters/pet";
+import pet, { Photo, AnimalResponse } from "@frontendmasters/pet";
 import { navigate, RouteComponentProps } from "@reach/router";
 import Modal from "./Modal";
 import Carousel from "./Carousel";
@@ -7,8 +7,18 @@ import ErrorBoundary from "./ErrorBoundary";
 import ThemeContext from "./ThemeContext";
 
 class Details extends React.Component<RouteComponentProps<{ id: string }>> {
-  state = { loading: true, showModal: false };
-  componentDidMount() {
+  public state = {
+    loading: true,
+    showModal: false,
+    name: "",
+    animal: "",
+    location: "",
+    description: "",
+    media: [] as Photo [],
+    breed: "",
+    url: ""
+  };
+  public componentDidMount() {
     // Note: below line will throw error if you want to test error boundary
     // throw new Error(":shit:");
 

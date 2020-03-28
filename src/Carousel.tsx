@@ -1,11 +1,23 @@
 import React from "react";
+import { Photo } from "@frontendmasters/pet";
 
-class Carousel extends React.Component {
-  state = {
+interface IProps {
+  media: Photo[];
+}
+
+interface IState {
+  active: number;
+  photos: string[];
+}
+
+class Carousel extends React.Component<IProps, IState> {
+  public state = {
     photos: [],
     active: 0
   };
-  static getDerivedStateFromProps({ media }) {
+  public static getDerivedStateFromProps({
+    media
+  }: IProps): { photos: string[] } {
     let photos = ["http://placecorgi.com/600/600"];
     if (media.length) {
       photos = media.map(({ large }) => large);
@@ -16,10 +28,15 @@ class Carousel extends React.Component {
 
   // (handleIndexClick)Note: event listener should be arrow function so it wont create context like window etc even if you use normal functions then you need to bind the this in the constructor itself so we can able to access this like this.handleIndexClick = this.handleIndexClick.bind(this) this is also slow one because constructor calls to many times
 
-  handleIndexClick = event => {
-    this.setState({
-      active: +event.target.dataset.index
-    });
+  public handleIndexClick = (event: React.MouseEvent<HTMLElement>) => {
+    if (!(event.target instanceof HTMLElement)) {
+      return;
+    }
+    if (event.target.dataset.index) {
+      this.setState({
+        active: +event.target.dataset.index
+      });
+    }
   };
 
   // If you dont want to use dataset to take attribut from html element use below but below one will be very expensive 2 years before but still slow in older browsers so use above one
@@ -30,7 +47,7 @@ class Carousel extends React.Component {
   //     });
   //   };
 
-  render() {
+  public render() {
     const { photos, active } = this.state;
 
     return (
