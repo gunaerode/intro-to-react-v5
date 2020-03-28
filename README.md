@@ -78,5 +78,6 @@
   - [Handlebars](https://handlebarsjs.com/) [EJS](https://ejs.co/) - Template engines for rendering
 - Typescript
   - [Typescript](https://frontendmasters.com/courses/typescript-v2/) with Mark North
+  - [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html)
 - Tslint
   - [jsx-no-lambda](https://jonhilton.net/typescript-and-react-forbidden-lambdas/) - Disable jsx no lambda for single line function
