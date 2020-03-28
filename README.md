@@ -81,3 +81,9 @@
   - [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html)
 - Tslint
   - [jsx-no-lambda](https://jonhilton.net/typescript-and-react-forbidden-lambdas/) - Disable jsx no lambda for single line function
+- Redux
+  - [StateManagement](https://frontendmasters.com/courses/react-state/) - Steve Kinney
+  - [FluxStandard (same for redux)](https://github.com/redux-utilities/flux-standard-action) - like action should have type, may have payload, error, and meta
+- Dev Tools
+  - [Redux dev tool](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+  - [React dev tool](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)

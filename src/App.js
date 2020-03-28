@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import { render } from "react-dom";
 import { Router, Link } from "@reach/router";
+import { Provider } from "react-redux"; // Added
 import SearchParams from "./SearchParams";
 import Details from "./Details";
-import ThemeContext from "./ThemeContext";
+import store from "./store"; // Added
+// Note: we are going to use redux instead of context hook
+// import ThemeContext from "./ThemeContext";
 
 // your code is here
 const App = () => {
-  const themeHook = useState("black");
+  // const themeHook = useState("black");
   return (
     <React.StrictMode>
-      <ThemeContext.Provider value={themeHook}>
+      {/* <ThemeContext.Provider value={themeHook}> */}
+      <Provider store={store}>
         <div>
           <header>
             <Link to="/">Adopt me!</Link>
@@ -20,7 +24,8 @@ const App = () => {
             <Details path="/details/:id" />
           </Router>
         </div>
-      </ThemeContext.Provider>
+      </Provider>
+      {/* </ThemeContext.Provider> */}
     </React.StrictMode>
   );
 };
