@@ -8,6 +8,7 @@ const useDropdown = (label, defaultState, options) => {
       <label htmlFor={id}>
         {label}
         <select
+          data-testid={id} // Added for jest testing
           name={state}
           id={id}
           value={state}

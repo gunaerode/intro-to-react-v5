@@ -12,14 +12,29 @@ const SearchParams = () => {
   const [pets, setPets] = useState([]);
   const [theme, setTheme] = useContext(ThemeContext);
 
-  async function requestPets() {
-    const { animals } = await pet.animals({
-      location,
-      breed,
-      type: animal
-    });
+  // NOTE: below async code hidden because testing will not work on async
 
-    setPets(animals || []);
+  // async function requestPets() {
+  //   const { animals } = await pet.animals({
+  //     location,
+  //     breed,
+  //     type: animal
+  //   });
+
+  //   setPets(animals || []);
+  // }
+
+  // Only testing purpose we changed async into promise
+  function requestPets() {
+    pet
+      .animals({
+        location,
+        breed,
+        type: animal
+      })
+      .then(({ animals }) => {
+        setPets(animals || []);
+      });
   }
 
   useEffect(() => {
@@ -69,7 +84,7 @@ const SearchParams = () => {
             <option value="darkred">Dark Red</option>
           </select>
         </label>
-        <button style={{ backgroundColor: theme }}>submit</button>
+        <button style={{ backgroundColor: theme }}>Submit</button>
       </form>
       <Results pets={pets}></Results>
     </div>
