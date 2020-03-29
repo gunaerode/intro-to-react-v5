@@ -91,3 +91,5 @@
   - [Kent C. Todds](https://frontendmasters.com/courses/testing-react/) - For react testing
   - [Mocha](https://frontendmasters.com/courses/react-intro/configuring-mocha/) - Old testing course
   - [React-V1](https://btholt.github.io/complete-intro-to-react-v1/)
+- Jest Bug Report
+  - [Nothing was returned from render](https://github.com/facebook/jest/issues/9723)
