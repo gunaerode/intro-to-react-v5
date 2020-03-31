@@ -87,3 +87,18 @@
 - Dev Tools
   - [Redux dev tool](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
   - [React dev tool](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+======================================================================================================
+
+## [State Management](https://frontendmasters.com/courses/pure-react-state/) :smiley: :heart_eyes:
+ - Author 
+   - #### Steve Kinney
+   - [twitter](https://twitter.com/stevekinney?lang=en)
+   - [Slides](https://speakerdeck.com/stevekinney/react-state)
+   - [Github](https://github.com/FrontendMasters/pure-react-state-management) - Frontend Master
+   - [Github Author](https://github.com/stevekinney/react-state-management) - Steve
+
+- Course Links
+  - [Redux & Mobx](https://frontendmasters.com/courses/redux-mobx/) - Other state management tools (Except internal React like hooks & lifecycle components)
+- Projects
+  - [Simple Counter](https://github.com/stevekinney/simple-counter-react-state.git)
