@@ -106,7 +106,11 @@
 
 - Course Links
   - [Redux & Mobx](https://frontendmasters.com/courses/redux-mobx/) - Other state management tools (Except internal React like hooks & lifecycle components)
-- Projects
+- Git Repose
   - [Simple Counter](https://github.com/stevekinney/simple-counter-react-state.git)
+- Class Based State
+  - [Callback](https://codesandbox.io/s/simple-counter-setstate-function-and-callback-u0ev5?module=%2Fsrc%2FCounter.js)
+  - [Helper](https://codesandbox.io/s/simple-counter-adds-localstorage-support-exercise-starter-wxubb?module=%2Fsrc%2FCounter.js)
+  - [Update document title](https://codesandbox.io/s/simple-counter-syncing-documenttitle-solution-in6r9?module=%2Fsrc%2FCounter.js)
 
 
